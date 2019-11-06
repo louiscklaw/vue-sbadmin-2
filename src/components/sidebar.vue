@@ -28,9 +28,9 @@
     <!-- Nav Item - Pages Collapse Menu -->
     <navitem
       :text="'Components'"
-      :href="'/'"
+      :href="'#'"
       :fa_icon_class="'fas fa-fw fa-cog'"
-      :submenu="{'Custom Components': {'Buttons': '/button', 'Cards':'/cards'} }"
+      :submenu="{'Custom Components': {'Buttons': '/buttons', 'Cards':'/cards'} }"
       :active="'Buttons'"
       />
 
@@ -79,13 +79,3 @@
   <!-- End of Sidebar -->
 
 </template>
-
-<script>
-  export default {
-
-  }
-</script>
-
-<style>
-
-</style>

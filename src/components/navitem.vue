@@ -19,8 +19,11 @@
           <h6 class="collapse-header">{{ submenu_name }}</h6>
 
           <div v-for="(value, name) in submenu_d" :key="name">
-            <a v-if="name == active" class="collapse-item active" :href="value">{{ name }}</a>
-            <a v-else class="collapse-item" :href="value">{{ name }}</a>
+            <!-- <a v-if="name == active" class="collapse-item active" :href="value">{{ name }}</a> -->
+            <!-- <a v-else class="collapse-item" :href="value">{{ name }}</a> -->
+            <router-link v-if="name == active" :to="value" class="collapse-item active" >{{ name }}</router-link>
+            <router-link v-else :to="value" class="collapse-item" >{{ name }}</router-link>
+
           </div>
         </div>
       </div>

@@ -4,31 +4,41 @@
 
       <!-- Page Wrapper -->
       <div id="wrapper">
-        <app-sidebar/>
-          <div id="content-wrapper" class="d-flex flex-column">
+        <app-sidebar />
+        <div id="content-wrapper" class="d-flex flex-column">
+
+          <!-- Main Content -->
+          <div id="content">
+            <app-topbar />
+
             <slot />
 
-            <app-footer />
           </div>
-          <!-- End of Content Wrapper -->
+          <!-- End of Main Content -->
+
+          <app-footer />
+        </div>
+        <!-- End of Content Wrapper -->
       </div>
       <!-- End of Page Wrapper -->
 
       <scroll-to-top />
-
       <logout-modal />
+
     </div>
 
   </div>
 </template>
 
 <script>
+  import topbar from "../components/topbar.vue";
   import sidebar from '../components/sidebar.vue'
   import footer from '../components/footer.vue'
 
 
   export default {
     components:{
+      "app-topbar": topbar,
       'app-sidebar': sidebar,
       'app-footer': footer
     }
