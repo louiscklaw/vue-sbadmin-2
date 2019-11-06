@@ -1,0 +1,22 @@
+<template>
+  <div class="Login">
+    <h1>Login page</h1>
+  </div>
+
+</template>
+
+<script>
+import loginLayout from '../layouts/loginLayout.vue';
+
+export default {
+  name: 'Login',
+  created() {
+    this.$emit('update:layout', loginLayout);
+  },
+};
+
+</script>
+
+<style>
+
+</style>

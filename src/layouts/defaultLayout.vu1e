@@ -1,0 +1,25 @@
+<template>
+  <div class="LayoutDefault">
+    <app-nav/>
+    <main class="LayoutDefault__main">
+      <slot/>
+    </main>
+    <footer class="LayoutDefault__footer">
+      &copy; layout default vue
+    </footer>
+  </div>
+</template>
+
+<script>
+import appNav from '../nav.vue'
+
+export default {
+  components: {
+    'app-nav': appNav
+  }
+}
+</script>
+
+<style>
+
+</style>
