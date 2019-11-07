@@ -23,7 +23,7 @@
 </template>
 
 <script>
-  import pieChart from './charts/pie_chart.vue'
+  import pieChart from './pie_chart.vue'
   export default {
     data () {
       return {
