@@ -1,16 +1,38 @@
 <template>
   <div class="container">
-    <h1 class="h3 mb-2 text-gray-800">Credits</h1>
-    <p class="mb-4">listing out the referenced opensource/free projects.</p>
+    <div class="heading">
+      <h1 class="h3 mb-2 text-gray-800">Credits and change logs</h1>
+      <p class="mb-4">listing out the referenced opensource/free projects.</p>
+
+    </div>
 
     <div class="row justify-content-md-center">
       <div class="col-lg-6">
         <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">credits</h6>
+          </div>
           <div class="card-body" v-for="credit in credit_list" :key="credit_list.indexOf(credit)">
             <div class="row">
               <div class="col-12">
                 <p>{{ credit.desc }}</p>
                 <a class="credit_link" :href="credit.link">{{ credit.name }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">change logs</h6>
+          </div>
+          <div class="card-body" v-for="change in change_logs" :key="change_logs.indexOf(change)">
+            <div class="row">
+              <div class="col-12">
+                <p>{{ change.date }}</p>
+                <p>{{ change.desc }}</p>
               </div>
             </div>
           </div>
@@ -46,8 +68,11 @@
             desc: 'vue',
             name: 'vuejs.org',
             link: 'vuejs.org'
-          }
-        ]
+          } ],
+        change_logs: [ {
+            date: '2019-11-07',
+            desc: 'init commit'
+          } ]
       }
     },
     created() {
@@ -64,5 +89,9 @@
   .credit_link {
 
     font-size: 1.75rem;
+  }
+
+  .heading {
+    text-align: center;
   }
 </style>
