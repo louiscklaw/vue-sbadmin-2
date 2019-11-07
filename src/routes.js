@@ -56,7 +56,7 @@ let route_config = [
 
   ['/status_404',status_404],
 
-  ['/vuetable2', vuetable2],
+  ['/vue-tables-2', vuetable2],
   ['/credits',credits]
 ]
 

@@ -66,13 +66,7 @@
 
     <!-- Nav Item - Tables -->
     <navitem
-      v-bind:text="'Tables'"
-      :fa_icon_class="'fas fa-fw fa-table'"
-    />
-
-    <!-- Nav Item - Tables -->
-    <navitem
-      v-bind:text="'vuetable2'"
+      v-bind:text="'vue-tables-2'"
       :fa_icon_class="'fas fa-fw fa-table'"
     />
 
