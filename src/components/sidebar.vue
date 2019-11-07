@@ -70,6 +70,18 @@
       :fa_icon_class="'fas fa-fw fa-table'"
     />
 
+    <!-- Nav Item - Tables -->
+    <navitem
+      v-bind:text="'vuetable2'"
+      :fa_icon_class="'fas fa-fw fa-table'"
+    />
+
+    <!-- Nav Item - Tables -->
+    <navitem
+      v-bind:text="'credits'"
+      :fa_icon_class="'fas fa-fw fa-trophy'"
+    />
+
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 
