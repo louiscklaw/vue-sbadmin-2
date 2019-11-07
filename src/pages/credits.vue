@@ -6,7 +6,7 @@
     <div class="row justify-content-md-center">
       <div class="col-lg-6">
         <div class="card shadow mb-4">
-          <div class="card-body" v-for="credit in credit_list" :key="credit.id">
+          <div class="card-body" v-for="credit in credit_list" :key="credit_list.indexOf(credit)">
             <div class="row">
               <div class="col-12">
                 <p>{{ credit.desc }}</p>
@@ -27,27 +27,22 @@
     data() {
       return {
         credit_list: [ {
-            id: '0',
             desc: 'origional theme provider',
             name: 'sb-admin-2',
             link: 'https://startbootstrap.com/themes/sb-admin-2/'
           }, {
-            id: '1',
             desc: 'chartjs',
             name: 'www.chartjs.org/',
             link: '//www.chartjs.org/'
           }, {
-            id: '0',
             desc: 'vue-chartjs',
             name: 'vue-chartjs.org/',
             link: '//vue-chartjs.org/'
           }, {
-            id: '0',
             desc: 'data table / grid',
             name: 'github.com/matfish2/vue-tables-2',
             link: '//github.com/matfish2/vue-tables-2'
           }, {
-            id: '0',
             desc: 'vue',
             name: 'vuejs.org',
             link: 'vuejs.org'
