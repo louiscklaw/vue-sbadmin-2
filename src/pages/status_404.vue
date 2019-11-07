@@ -1,4 +1,3 @@
-
 <template>
   <status-404-content />
 </template>
@@ -10,8 +9,8 @@
     components: {
       'status-404-content': status404Content
     },
-    created(){
-      this.$emit('update:layout', mainLayoutVue)
+    created() {
+      this.$emit( 'update:layout', mainLayoutVue )
     }
   }
 </script>
