@@ -1,14 +1,14 @@
 
 <template>
-  <charts-content />
+  <forgot-password-content />
 </template>
 <script>
-  import chartsContent from '../components/chartsContent.vue'
+  import forgotPasswordContent from '../components/forgot-passwordContent.vue'
   import mainLayoutVue from '../layouts/mainLayout.vue'
 
   export default {
     components: {
-      'charts-content': chartsContent
+      'forgot-password-content': forgotPasswordContent
     },
     created(){
       this.$emit('update:layout', mainLayoutVue)

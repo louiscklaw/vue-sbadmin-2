@@ -39,7 +39,7 @@
       :text="'Utilities'"
       :href="'/'"
       :fa_icon_class="'fas fa-fw fa-wrench'"
-      :submenu="{'Custom Utilities':{ 'Colors': '/colors', 'Borders':'/borders', 'Animations':'/animations','Other':'/other'}}"
+      :submenu="{'Custom Utilities':{ 'Colors': '/colors', 'Border':'/border', 'Animations':'/animations','Other':'/other'}}"
       />
 
 
@@ -54,7 +54,7 @@
       :text="'Pages'"
       :href="'/'"
       :fa_icon_class="'fas fa-fw fa-folder'"
-      :submenu="{'login screens': {'login': '/login', 'Register':'/Register', 'Forgot Password':'/forgot_password'}, 'other pages': {'Animations':'/animations','Other':'/other'}}"
+      :submenu="{'login screens': {'login': '/login', 'Register':'/Register', 'Forgot Password':'/forgot_password'}, 'other pages': {'status_404':'/status_404','blank':'/blank'}}"
       />
 
 

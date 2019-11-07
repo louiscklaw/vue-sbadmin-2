@@ -1,14 +1,14 @@
 
 <template>
-  <charts-content />
+  <blank-content />
 </template>
 <script>
-  import chartsContent from '../components/chartsContent.vue'
+  import blankContent from '../components/blankContent.vue'
   import mainLayoutVue from '../layouts/mainLayout.vue'
 
   export default {
     components: {
-      'charts-content': chartsContent
+      'blank-content': blankContent
     },
     created(){
       this.$emit('update:layout', mainLayoutVue)

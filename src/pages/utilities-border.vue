@@ -1,14 +1,14 @@
 
 <template>
-  <charts-content />
+  <utilities-border-content />
 </template>
 <script>
-  import chartsContent from '../components/chartsContent.vue'
+  import utilitiesBorderContent from '../components/utilities-borderContent.vue'
   import mainLayoutVue from '../layouts/mainLayout.vue'
 
   export default {
     components: {
-      'charts-content': chartsContent
+      'utilities-border-content': utilitiesBorderContent
     },
     created(){
       this.$emit('update:layout', mainLayoutVue)

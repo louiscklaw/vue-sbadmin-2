@@ -1,14 +1,14 @@
 
 <template>
-  <charts-content />
+  <login-content />
 </template>
 <script>
-  import chartsContent from '../components/chartsContent.vue'
+  import loginContent from '../components/loginContent.vue'
   import mainLayoutVue from '../layouts/mainLayout.vue'
 
   export default {
     components: {
-      'charts-content': chartsContent
+      'login-content': loginContent
     },
     created(){
       this.$emit('update:layout', mainLayoutVue)
