@@ -1,14 +1,14 @@
 
 <template>
-  <404-content />
+  <status-404-content />
 </template>
 <script>
-  import 404Content from '../components/404Content.vue'
   import mainLayoutVue from '../layouts/mainLayout.vue'
+  import status404Content from '../components/status404Content.vue'
 
   export default {
     components: {
-      '404-content': 404Content
+      'status-404-content': status404Content
     },
     created(){
       this.$emit('update:layout', mainLayoutVue)
@@ -17,4 +17,3 @@
 </script>
 <style>
 </style>
-  

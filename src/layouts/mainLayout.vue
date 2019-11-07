@@ -26,7 +26,6 @@
       <logout-modal />
 
     </div>
-
   </div>
 </template>
 

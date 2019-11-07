@@ -1,20 +1,18 @@
-
 <template>
   <register-content />
 </template>
 <script>
+  import fullScreenLayoutVue from '../layouts/fullScreenLayout.vue'
   import registerContent from '../components/registerContent.vue'
-  import mainLayoutVue from '../layouts/mainLayout.vue'
 
   export default {
     components: {
       'register-content': registerContent
     },
-    created(){
-      this.$emit('update:layout', mainLayoutVue)
+    created() {
+      this.$emit( 'update:layout', fullScreenLayoutVue )
     }
   }
 </script>
 <style>
 </style>
-  

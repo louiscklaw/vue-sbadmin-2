@@ -14,13 +14,13 @@ import utilities_other from './pages/utilities-other.vue'
 // pages
 import login from './pages/login.vue'
 import register from './pages/register.vue'
-
-
-import blank from './pages/blank.vue'
-import charts from './pages/charts.vue'
 import forgot_password from './pages/forgot-password.vue'
 
+import status_404 from './pages/status_404.vue'
+import blank from './pages/blank.vue'
 
+
+import charts from './pages/charts.vue'
 import tables from './pages/tables.vue'
 
 
@@ -52,6 +52,8 @@ let route_config = [
   ['/utilities_border',utilities_border],
   ['/utilities_color',utilities_color],
   ['/utilities_other',utilities_other],
+
+  ['/status_404',status_404]
 ]
 
 let trans_route_config = route_config.map( x => {

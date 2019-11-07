@@ -3,18 +3,18 @@
   <login-content />
 </template>
 <script>
+  import fullScreenLayoutVue from '../layouts/fullScreenLayout.vue'
+
   import loginContent from '../components/loginContent.vue'
-  import mainLayoutVue from '../layouts/mainLayout.vue'
 
   export default {
     components: {
       'login-content': loginContent
     },
     created(){
-      this.$emit('update:layout', mainLayoutVue)
+      this.$emit('update:layout', fullScreenLayoutVue)
     }
   }
 </script>
 <style>
 </style>
-  
