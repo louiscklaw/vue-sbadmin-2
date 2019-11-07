@@ -1,6 +1,12 @@
 import Vue from "vue";
 import App from "./App.vue";
 
+import VueMeta from 'vue-meta'
+Vue.use(VueMeta, {
+  // optional pluginOptions
+  refreshOnceOnNavigation: true
+})
+
 import VueRouter from "vue-router";
 import Routes from "./routes";
 Vue.use(VueRouter);

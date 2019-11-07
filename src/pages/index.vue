@@ -14,5 +14,13 @@
     created() {
       this.$emit( 'update:layout', mainLayout );
     },
-  };
+    metaInfo: {
+      title: 'My Example App',
+      titleTemplate: '%s - Yay!',
+      htmlAttrs: {
+        lang: 'en',
+        amp: true
+      }
+    }
+  }
 </script>

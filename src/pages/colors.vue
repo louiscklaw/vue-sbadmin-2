@@ -10,11 +10,10 @@
     components: {
       'colors-content': colorsContent
     },
-    created(){
-      this.$emit('update:layout', mainLayoutVue)
+    created() {
+      this.$emit( 'update:layout', mainLayoutVue )
     }
   }
-
 </script>
 
 <style>
