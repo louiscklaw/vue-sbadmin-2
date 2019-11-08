@@ -12,7 +12,9 @@
       <div class="col-12">
         <div class="card shadow mb-4">
           <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">clipboard.js</h6>
+            <h6 class="m-0 font-weight-bold text-primary">
+              clipboard.js
+            </h6>
           </div>
           <div class="card-body">
             <div class="row">
@@ -31,7 +33,7 @@
 
 <script>
   import mainLayout from '../layouts/mainLayout.vue'
-  import sourceCode from '../components/source_code.vue'
+  import copiableSourceCode from '../components/copiable_source_code.vue'
 
   let test_source_code = "console.log('testing 123')"
 
@@ -43,7 +45,7 @@
       this.$emit( 'update:layout', mainLayout )
     },
     components: {
-      'source-code': sourceCode
+      'source-code': copiableSourceCode
     }
   }
 </script>
