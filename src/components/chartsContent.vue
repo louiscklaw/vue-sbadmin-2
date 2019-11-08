@@ -14,18 +14,18 @@
         <chart-parking />
       </div>
 
-      <chart-donut-chart />
+      <chart-donut-wrapper />
 
     </div>
   </div>
 </template>
 <script>
   import chartParking from './chartParking.vue'
-  import chartDonutChart from './chartDonutChart.vue'
+  import donutChartWrapper from './charts/DonutChartWrapper.vue'
 
   export default {
     components: {
-      'chart-donut-chart': chartDonutChart,
+      'chart-donut-wrapper': donutChartWrapper,
       'chart-parking': chartParking
     }
   }

@@ -1,5 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
+Vue.config.productionTip = false;
 
 import VueMeta from 'vue-meta'
 Vue.use(VueMeta, {
@@ -12,7 +13,8 @@ import Routes from "./routes";
 Vue.use(VueRouter);
 const router = new VueRouter({ routes: Routes, mode: "history" });
 
-Vue.config.productionTip = false;
+import VueClipboard from 'vue-clipboard2'
+Vue.use(VueClipboard)
 
 new Vue({
   render: h => h(App),
