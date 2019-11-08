@@ -23,6 +23,8 @@ import blank from './pages/blank.vue'
 import charts from './pages/charts.vue'
 import tables from './pages/tables.vue'
 
+import draft from './pages/draft.vue'
+
 import vuetable2 from './pages/vuetable2.vue'
 import credits from './pages/credits.vue'
 
@@ -57,6 +59,7 @@ let route_config = [
   ['/status_404',status_404],
 
   ['/vue-tables-2', vuetable2],
+  ['/draft', draft],
   ['/credits',credits]
 ]
 

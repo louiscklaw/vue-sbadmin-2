@@ -72,6 +72,12 @@
 
     <!-- Nav Item - Tables -->
     <navitem
+      v-bind:text="'draft'"
+      :fa_icon_class="'fas fa-fw fa-pen-square'"
+    />
+
+    <!-- Nav Item - Tables -->
+    <navitem
       v-bind:text="'credits'"
       :fa_icon_class="'fas fa-fw fa-trophy'"
     />
